@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="">
             <img id="logotipo" src="../assets/logo.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -182,6 +182,10 @@ p {
     font-size: 18px;
 }
 
+body{
+    background-color: black;
+}
+
 .container>div {
     zoom: 75%;
 }
@@ -198,6 +202,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -218,7 +223,7 @@ p {
 }
 
 .card-images .image {
-    border: 1px solid red;
+    border: 1px solid black;
 }
 
 .card-images img {
@@ -236,11 +241,16 @@ p {
     color: white;
 }
 
-.cortes_masculinos .cortes_femeninos {
+.cortes_masculinos, .cortes_femeninos {
     height: auto;
+    background-color: #f3f3f4;
 }
 .title{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-content p{
+    font-weight: bold;
 }
 </style>
