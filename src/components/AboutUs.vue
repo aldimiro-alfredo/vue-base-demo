@@ -24,13 +24,38 @@
       </div>
   </nav>
 
-  <div>
-      <h1>{{ titulo }}</h1>
-      <p>{{ mensagem }}</p>
+  <div class="title">
+      <h3>{{ titulo }}</h3>
+      <!---<p>{{ mensagem }}</p>-->
+  </div>
+
+  <div class="container aboutUs">
+      <div class="pic-perfile">
+          <img src="../assets/logo.png" alt="" />
+
+          <hr>
+
+          <p>ENG. Aldimiro Alfredo</p>
+      </div>
+      <div class="content-perfile">
+        <p><b>Um pouco sobre mim</b></p>
+          <p>
+              Eu sou o Aldimiro Alfredo, Programador! Tenho 27 anos e actuo na área de desenvolvimento a mais de 4 anos. Possuo experiência como Desenvolvedor Web. Logo a baixo tem o meu currículo com informçôes mais detalhadas sobre mim.
+              Se preferir, podemos marcar uma call atráves do meu e-mail que está disponibilizado.
+          </p>
+
+          <br>
+
+          <p>Tel: 999 999 99</p>
+          <p>Email: {{  user?.email }}</p>
+      </div>
   </div>
 </template>
 
 <script>
+
+import userService from '../../src/components/Users/UserService'
+
   export default {
       name: "AboutUs",
       props: {
@@ -38,13 +63,26 @@
       },
       data() {
           return {
-              titulo: "AboutUs",
+              titulo: "Sobre Mim",
               mensagem: "AboutUs",
               modalOpen: false,
+              user:[]
           };
       },
-      mounted() {},
-      methods: {},
+      mounted() {
+        this.getUser()
+      },
+      methods: {
+
+        async getUser(){
+
+          const response = userService.getUserAPI();
+
+          this.user=(await response).data
+
+          console.log(this.user)
+        }
+      },
   };
 </script>
 
@@ -56,6 +94,39 @@
 
   p {
       font-size: 18px;
+  }
+
+  .title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .aboutUs {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      gap: 10px;
+  }
+
+  .pic-perfile {
+      border-right: 2px solid orange;
+      width: 45%;
+  }
+
+  .pic-perfile img{
+      height: 300px;
+      width: 300px;
+  }
+
+  .content-perfile {
+      width: 45%;
+  }
+
+  .content-perfile p{
+    text-align: justify;
   }
 
   .nav-link:hover {
