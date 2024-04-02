@@ -25,7 +25,7 @@
   </nav>
 
   <div class="title">
-      <h3>{{ titulo }}</h3>
+      <h3 style="text-transform: uppercase;font-weight: bold;">{{ titulo }}</h3>
       <!---<p>{{ mensagem }}</p>-->
   </div>
 
@@ -38,7 +38,7 @@
           <p>ENG. Aldimiro Alfredo</p>
       </div>
       <div class="content-perfile">
-        <p><b>Um pouco sobre mim</b></p>
+        <p style="text-transform: uppercase;"><b>Um pouco sobre mim</b></p>
           <p>
               Eu sou o Aldimiro Alfredo, Programador! Tenho 27 anos e actuo na área de desenvolvimento a mais de 4 anos. Possuo experiência como Desenvolvedor Web. Logo a baixo tem o meu currículo com informçôes mais detalhadas sobre mim.
               Se preferir, podemos marcar uma call atráves do meu e-mail que está disponibilizado.
