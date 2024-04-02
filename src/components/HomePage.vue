@@ -10,7 +10,8 @@
         <div class="container collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <router-link :to="{ name: 'home' }" class="nav-link">Página Inicia</router-link>
+                    <a class="nav-link" href="#cortes_femeninos">Página Inicial</a>
+                    <!----<router-link :to="{ name: 'home' }" class="nav-link">Página Inicia</router-link>-->
                 </li>
                 <li class="nav-item">
                     <router-link :to="{ name: 'servicesUs' }" class="nav-link">Serviços</router-link>
@@ -86,7 +87,7 @@
 
     <h3 class="title">Cortes Femeninos</h3>
 
-    <div class="container cortes_femeninos">
+    <div class="container cortes_femeninos" id="cortes_femeninos">
         <div class="card-images">
             <div class="image">
                 <img src="./../assets/img/menina1.jpg" />
