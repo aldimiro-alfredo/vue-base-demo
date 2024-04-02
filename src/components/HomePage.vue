@@ -10,16 +10,16 @@
         <div class="container collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Página Inicial</a>
+                    <router-link :to="{ name: 'home' }" class="nav-link">Página Inicia</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Serviços</a>
+                    <router-link :to="{ name: 'servicesUs' }" class="nav-link">Serviços</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
+                    <router-link :to="{ name: 'aboutUs' }" class="nav-link">Sobre Nós</router-link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contactos</a>
+                    <router-link :to="{ name: 'contactUs' }" class="nav-link">Contact Nos</router-link>
                 </li>
             </ul>
         </div>
@@ -138,9 +138,6 @@
             </div>
         </div>
     </div>
-
-    <!----<router-link :to="{ name: 'home' }">Home</router-link>
-  <router-link :to="{ name: 'users' }">Listagem de Usuários</router-link>-->
 
 </template>
 
