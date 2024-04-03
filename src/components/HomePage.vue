@@ -1,30 +1,6 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <a class="navbar-brand" href="">
-            <img id="logotipo" src="../assets/logo.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="container collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#cortes_femeninos">Página Inicial</a>
-                    <!----<router-link :to="{ name: 'home' }" class="nav-link">Página Inicia</router-link>-->
-                </li>
-                <li class="nav-item">
-                    <router-link :to="{ name: 'servicesUs' }" class="nav-link">Serviços</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="{ name: 'aboutUs' }" class="nav-link">Sobre Nós</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="{ name: 'contactUs' }" class="nav-link">Contact Nos</router-link>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
+    <HeaderPage></HeaderPage>
 
     <div class="container bg-image">
         <h2>Salão <span style="color: orange;">UEVO</span></h2>
@@ -140,14 +116,22 @@
         </div>
     </div>
 
+    <FooterPage></FooterPage>
+
 </template>
 
 <script>
 
 import userService from './Users/UserService'
+import HeaderPage from '../components/HeaderPage.vue'
+import FooterPage from '../components/FooterPage.vue'
 
 export default {
     name: "HomePage",
+    components: {
+        HeaderPage,
+        FooterPage
+    },
     props: {
         msg: String,
     },
@@ -184,9 +168,6 @@ body{
     background-color: black;
 }
 
-.container>div {
-    zoom: 75%;
-}
 
 #logotipo{
     width: 35px;
