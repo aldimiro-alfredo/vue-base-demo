@@ -1,6 +1,5 @@
 <template>
 
-
   <nav class="navbar navbar-expand-lg navbar-light bg-danger">
     <a class="navbar-brand" href="">
       <img id="logotipo" src="../assets/logo.png">
@@ -67,6 +66,9 @@ import modalService from '../../src/components/Users/ModalService'
 export default {
 
   name: 'ServicesUs',
+  components:{
+
+  },
   props: {
     msg: String
   },
@@ -116,5 +118,9 @@ p {
   width: 35px;
   height: 35px;
   margin: 5;
+}
+
+.modal-content{
+  border-radius: 0px;
 }
 </style>

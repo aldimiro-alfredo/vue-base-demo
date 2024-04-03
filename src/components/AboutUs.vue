@@ -26,7 +26,6 @@
 
   <div class="title">
       <h3 style="text-transform: uppercase;font-weight: bold;">{{ titulo }}</h3>
-      <!---<p>{{ mensagem }}</p>-->
   </div>
 
   <div class="container aboutUs">
@@ -58,6 +57,9 @@ import userService from '../../src/components/Users/UserService'
 
   export default {
       name: "AboutUs",
+      components:{
+
+      },
       props: {
           msg: String,
       },

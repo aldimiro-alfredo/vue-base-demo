@@ -35,6 +35,9 @@
 
 export default {
   name: 'ContactUs',
+  components:{
+
+  },
   props: {
     msg: String
   },
