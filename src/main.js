@@ -4,7 +4,7 @@ import router from '../routes.js'; // Importe o arquivo de configuração do rot
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import 'bootstrap/dist/js/bootstrap.bundle.js';
-
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const app = createApp(App); // Crie a instância do aplicativo Vue
 

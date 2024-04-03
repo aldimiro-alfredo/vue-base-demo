@@ -46,8 +46,8 @@
 
           <br>
 
-          <p>Tel: 999 999 99</p>
-          <p>Email: {{  user?.email }}</p>
+          <p><i class="bi bi-telephone"></i> Tel: 999 999 99</p>
+          <p><i class="bi bi-envelope"></i> Email: {{  user?.email }}</p>
       </div>
   </div>
 </template>

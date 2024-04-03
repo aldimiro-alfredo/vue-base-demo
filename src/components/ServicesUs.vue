@@ -62,8 +62,7 @@
 
 <script>
 
-import { Modal } from "bootstrap";
-
+import modalService from '../../src/components/Users/ModalService'
 
 export default {
 
@@ -80,21 +79,17 @@ export default {
     };
   },
   mounted() {
-
-    console.log("uniqueModal", this.uniqueModal)
   },
   methods: {
 
     showModal() {
-      this.uniqueModal = new Modal(document.getElementById("myModal"), { keyboard: false });
-      console.log("uniqueModal", this.uniqueModal)
+      this.uniqueModal = modalService.showModal("myModal")
       this.uniqueModal.show();
     },
     closeModal() {
       this.uniqueModal.hide();
     },
     save() {
-
       console.log("save............")
     }
 
