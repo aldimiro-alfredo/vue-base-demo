@@ -3,6 +3,9 @@
     <HeaderPage></HeaderPage>
 
     <div class="container bg-image">
+
+        <img src="../assets/img/aldimiro_alfredo.png">
+
         <h2>Aldimiro Alfredo</h2>
         <p>
             Seja bem-vindo(a) ao meu portfólio, aqui eu partilho as últimas<br>
@@ -51,34 +54,32 @@
         <h2>Habilidades</h2>
 
         <div class="container container_skills">
-
-            <div class="item">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis delectus ex debitis est,
-                    corporis numquam doloremque quisquam eaque sapiente iste. Voluptatibus sunt, id fugiat dolore amet
-                    optio dolorem sapiente obcaecati
-                </p>
-                <a href="#">Ver mais</a>
-            </div>
             <div class="item">
                 <p>HTML e CSS</p>
-                <div style="width:80%; background-color:#00B37E;"><span>80%</span></div>
+            </div>
+            <div class="item">
                 <p>AngularJs</p>
-                <div style="width:80%; background-color:#00B37E;"><span>80%</span></div>
+            </div>
+            <div class="item">
                 <p>VuesJs</p>
-                <div style="width:80%; background-color:#00B37E;"><span>80%</span></div>
+            </div>
+            <div class="item">
                 <p>NodeJs</p>
-                <div style="width:80%; background-color:#00B37E;"><span>80%</span></div>
+            </div>
+            <div class="item">
                 <p>JavaScript</p>
-                <div style="width:90%; background-color:#00B37E;"><span>90%</span></div>
+            </div>
+            <div class="item">
                 <p>Docker</p>
-                <div style="width:70%; background-color:#00B37E;"><span>70%</span></div>
+            </div>
+            <div class="item">
                 <p>Mysql</p>
-                <div style="width:70%; background-color:#00B37E;"><span>70%</span></div>
+            </div>
+            <div class="item">
                 <p>C#</p>
-                <div style="width:90%; background-color:#00B37E;"><span>90%</span></div>
+            </div>
+            <div class="item">
                 <p>Git</p>
-                <div style="width:80%; background-color:#00B37E;"><span>80%</span></div>
             </div>
         </div>
 
@@ -160,17 +161,22 @@ p {
 }
 
 .bg-image {
-    background-image: url(../assets/img/aldimiro_alfredo.png);
+    /*background-image: url(../assets/img/aldimiro_alfredo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 60vh;*/
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+}
+
+.bg-image img{
+    margin-top: 130px;
+    border: 1px solid #121214;
+    border-radius: 50%
 }
 
 .bg-image p{
@@ -184,7 +190,6 @@ p {
 }
 
 .my_services h2 {
-    color: white;
     text-transform: uppercase;
 }
 
@@ -213,7 +218,6 @@ p {
 }
 
 .skills h2 {
-    color: white;
     text-transform: uppercase;
 }
 
@@ -221,13 +225,13 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .container_skills .item {
     background-color: #121214;
-    width: 100%;
     padding: 30px 30px;
 }
 
@@ -253,6 +257,7 @@ p {
 .container_networks{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
