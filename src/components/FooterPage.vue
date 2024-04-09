@@ -1,11 +1,8 @@
 <template>
-  <!--<h1>{{ titulo }}</h1>
-<p>{{ mensagem }}</p>-->
-
   <div class="footer">
       <div class="container container-item">
           <div class="footer-item">
-              <p style="margin-left: 120px;">Acompanhe a gente</p>
+              <p style="margin-left: 120px;">Redes Sócias</p>
               <br />
 
               <a href="#" class="btn-socias">
@@ -23,7 +20,7 @@
           </div>
 
           <div class="footer-item">
-              <p>LINUXtips</p>
+              <p>Parceiros</p>
               <br />
               <p>
                   A LINUXtips desde 2014 vem compartilhando conhecimento e sendo uma re-evolução na forma de aprender sobre TI.
@@ -39,13 +36,11 @@
           </div>
 
           <div class="footer-item">
-              <p>Entre em contato</p>
+              <p>Contatos</p>
               <br />
-              <p><i class="bi bi-envelope"></i> contato@linuxtips.io</p>
-              <p><i class="bi bi-envelope"></i> empresas@linuxtips.io</p>
-              <p><i class="bi bi-envelope"></i> Política de Cancelamento</p>
-              <p><i class="bi bi-envelope"></i> Manual do Estudante</p>
-              <p><i class="bi bi-envelope"></i> Termos de Uso</p>
+              <p><i class="bi bi-envelope"></i> aldimiroalfredo@gmail.com</p>
+              <p><i class="bi bi-phone"></i> 948 815 157</p>
+              <p><i class="bi bi-list"></i> Termos de Uso</p>
           </div>
       </div>
   </div>
@@ -85,7 +80,6 @@
   }
 
   .container-item {
-      margin-top: 20px;
       padding-top: 20px;
       display: flex;
       flex-direction: row;

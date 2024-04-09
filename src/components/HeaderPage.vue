@@ -1,8 +1,8 @@
 <template>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="">
-            <img id="logotipo" src="../assets/logo.png">
+            <!----<img id="logotipo" src="../assets/logo.png">-->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,24 +11,21 @@
         <div class="container collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#cortes_femeninos">Página Inicial</a>
+                    <a class="nav-link" href="#cortes_femeninos">Ínicio</a>
                     <!----<router-link :to="{ name: 'home' }" class="nav-link">Página Inicia</router-link>-->
+                </li>
+                <li class="nav-item">
+                    <router-link :to="{ name: 'aboutUs' }" class="nav-link">Sobre</router-link>
                 </li>
                 <li class="nav-item">
                     <router-link :to="{ name: 'servicesUs' }" class="nav-link">Serviços</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link :to="{ name: 'aboutUs' }" class="nav-link">Sobre Nós</router-link>
-                </li>
-                <li class="nav-item">
-                    <router-link :to="{ name: 'contactUs' }" class="nav-link">Contact Nos</router-link>
+                    <router-link :to="{ name: 'contactUs' }" class="nav-link">Contactos</router-link>
                 </li>
             </ul>
         </div>
     </nav>
-
-<!---<h1>{{ titulo }}</h1>
-<p>{{ mensagem }}</p>-->
 
 </template>
 
@@ -62,8 +59,18 @@ p {
   font-size: 18px;
 }
 
+nav{
+  background-color: #1f2432;
+  color: white;
+}
+
+.nav-link{
+  text-transform: uppercase;
+  color: white
+}
+
 .nav-link:hover {
-    background-color: black;
+    border-bottom: 4px solid #121214;
     color: white;
 }
 
